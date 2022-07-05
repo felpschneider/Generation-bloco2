@@ -57,7 +57,7 @@ VALUES ("Poppy", "Guardiã do Martelo", 900, 2900, 2);
 INSERT INTO tb_personagens(nome, descricao, poder_ataque, poder_defesa, classe_id) 
 VALUES ("Caitlyn", "A Xerife de Piltover", 3000, 1150, 4);
 
-SELECT * FROM tb_personagens WHERE poder_ataque > 2000;
+SELECT * FROM tb_personagpostagensens WHERE poder_ataque > 2000;
 
 SELECT * FROM tb_personagens WHERE poder_defesa > 1000 AND poder_defesa < 2000;
 

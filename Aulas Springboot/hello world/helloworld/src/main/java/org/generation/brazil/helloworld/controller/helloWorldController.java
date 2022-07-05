@@ -12,4 +12,25 @@ public class helloWorldController {
 	public String hello() {
 		return "Hello World!";
 	}
+	
+	@GetMapping("/objetivos")
+	public String objetivos(){
+		return "Meu objetivo essa semana é aprender o framework"
+				+ " Springboot e focar nos projetos e exercícios";
+				
+	}
+	
+	@GetMapping("/bsm")
+	public String bsm(){
+		return "<h1>As BSM's são:<br></h1>" 
+				+ "Trabalho em equipe<br>"
+				+ "Atenção aos Detalhes<br>"
+				+ "Proatividade<br>"
+				+ "Comunicação<br>"
+				+ "Orientação ao Futuro<br>"
+				+ "Responsabilidade Pessoal<br>"
+				+ "Persistência<br>"
+				+ "Mentalidade de Crescimento";
+				
+	}
 }

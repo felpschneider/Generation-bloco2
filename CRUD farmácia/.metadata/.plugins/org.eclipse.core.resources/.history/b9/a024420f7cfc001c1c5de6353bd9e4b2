@@ -1,0 +1,18 @@
+package br.com.farmasunto.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.farmasunto.model.Produto;
+
+public interface ProdutoRepository {
+
+	@Repository
+	public interface PostagensRepository extends JpaRepository<Produto, Long>{
+		public List<Produto> findAllByNomeContainingIgnoreCase(String Nome);
+	
+	}
+	
+}
