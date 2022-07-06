@@ -1,0 +1,16 @@
+package com.eg.model;
+
+@Entity
+@Table (name = "tb_categoria")
+public class Categoria {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	
+	@NotNull
+	private String tipo;
+	
+	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("categoria")
+	private List<Produto> produto;
